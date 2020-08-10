@@ -1,0 +1,78 @@
+body{
+    background-color:antiquewhite;
+    
+}
+a{
+    text-decoration:none;
+}
+.footer{
+    text-align: center;
+    color: brown;
+}
+.Clinics{
+    color: brown;
+}
+ul{
+    color: brown;
+}
+h1{
+    color: darkred;
+}
+#xx{
+    text-align: center;
+}
+.pharmacy{
+    color: maroon;
+}
+.text{
+    color: rebeccapurple;
+    text-align: center;
+    font-size: xx-large;
+}
+.slider{
+    margin: auto;
+}
+.button{
+    margin: auto;
+}
+.af{
+   margin-left: 80px;
+    
+}
+#yazı{
+    color:darkblue;
+}
+label{
+    color: red
+}
+input{
+    color: blue;
+}
+#ff{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+    font-style: italic;
+    font-size: xx-large;
+}
+.card-text{
+    color: darkred;
+}
+#lol{
+    font: x-large;
+    color: red;
+     font-style: italic;
+}
+#bbb{
+    font: x-large;
+    color: purple;
+     font-style: italic;
+}
+#response{
+    background-color: peachpuff;
+}
+
+#kok{
+    text-align: center;
+    font-size: xx-large;
+    color: red;
+}

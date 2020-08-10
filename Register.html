@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title>Register.html</title>
+		<meta charset="utf-8">
+   		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="mystyle.css">
+	</head>
+	
+	<body>
+		<div class="container-fluid">	
+			<div class="row align-items-center">
+				<div class="col-10 ">
+				
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="index.html">Homepage</a></li>
+						<li class="list-inline-item"><a href="Blog.html">Blog</a></li>
+						<li class="list-inline-item"><a href="Our Service.html">Our Service</a></li>
+						<li class="list-inline-item"><a href="Our Team.html">Our Team</a></li>
+						<li class="list-inline-item"><a href="Gallery.html">Gallery</a></li>
+						<li class="list-inline-item"><a href="Contact Me.html">Contact Me</a></li>
+					    <li class="list-inline-item ">Register</li>
+						
+					</ul>
+				</div>
+				<div class="col-sm-2 col-lg-2">
+					<div class="container float-right">
+                        <div>
+                            <form id="xxx" method="get" action="http://www.google.com/search">
+                                    <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="Search" class="tfbutton">
+                            </form>
+                        <div class="tfclear"></div>
+                        </div> 
+						
+					</div>
+				</div>		
+			</div>	
+		</div>			
+		
+		
+		
+		
+				<hr>
+
+        
+                
+                        
+
+
+                  
+                  
+                  
+                  
+                  
+                  <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <form name="myForm"  onsubmit="return validateForm()" action="response2.html" method="GET">
+                                    <label for="">Name and Surname:</label>   <br>
+                                    <input type="text" name="fname"  
+                                      placeholder="Enter the Full Name">
+                                      <br>
+                                    <label for="password">Password:</label> <br>
+                                    <input type="password" id="t1" name="password" placeholder="Please enter the valid password." size="27" >  <br>
+                        
+                        
+                                    <label for="email">Email:</label>   <br>
+                                    <input type="email" name="email" autocomplete="on"  placeholder="Please Enter Your email" size="25"><br>
+                        
+
+                                    <label for="birthday">Birthday:</label><br>
+                                    <input type="text" id="dt" name="DOB"><br>
+
+
+
+
+                                    <label for="gender">Choose your gender :</label> <br>
+                                    <select id="gender">
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                      </select> <br>
+
+
+                                    <label for="telephone">Telephone:</label>   <br>
+                                    <input type="tel" name="tel"   placeholder="Please Enter Your Phone Number" size="30" maxlength="11" ><br>
+                        
+                        
+                                    
+                                    <label for="message">About Me :</label><br>
+                                    <textarea name="message" rows="5" cols="30" placeholder="Please describe yourself" ></textarea> <br>
+
+                                    <label for="myfile">Select a file:</label> 
+                                    <input type="file" id="myfile" name="myfile"> <br>
+                        
+                                   
+                                 <p id="bbb">Mark your Interest :</p> 
+                                 <label for="interest1">Autos and Vehicles</label> 
+                                 <input type="checkbox" id="interest1" name="interest1" value="Autos and Vehicles"> <br>
+                                 <label for="interest2">Education</label>
+                                 <input type="checkbox" id="interest2" name="interest2" value="Education"> <br>
+                                 <label for="interest3"> Gaming</label>
+                                 <input type="checkbox" id="interest3" name="interest3" value="Gaming">  <br>
+                                 <label for="interest4"> Politics</label>
+                                 <input type="checkbox" id="interest4" name="interest4" value="Politics"> <br>
+                                 
+                                 <label for="interest6"> Comedy</label>
+                                 <input type="checkbox" id="interest6" name="interest6" value="Comedy">  <br>
+                                 <label for="interest7"> Music</label>
+                                 <input type="checkbox" id="interest7" name="interest7" value="Music">   <br>
+                                 <label for="interest8"> Film and Animation</label>
+                                 <input type="checkbox" id="interest8" name="interest8" value=" Film and Animation"> <br>
+                                 <label for="interest9"> Pets and Animals</label>
+                                 <input type="checkbox" id="interest9" name="interest9" value="Pets and Animals">    <br>
+                                 <label for="interest10"> Sports</label>
+                                 <input type="checkbox" id="interest10" name="interest10" value="Sports">    <br>
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 <br> <input class="btn btn-primary" type="submit" value="Submit"> 
+                                 <input type="reset" class="btn btn-primary" value="Reset" />  
+                                  
+                                    
+                                  </form>
+
+                            </div>
+
+
+                        </div>
+
+                  </div>
+                  
+                                     
+                                    
+                            
+                  
+               
+                  
+                  
+                  <script> 
+                    function validateForm() {
+                      var x = document.forms["myForm"]["fname"].value;
+                      var password = document.forms["myForm"]["password"].value;
+                      var letters = /^[a-zA-Z\s]*$/;
+                      var email= document.forms["myForm"]["email"].value;
+                      var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                      var tel = document.forms["myForm"]["tel"].value;
+                      var DOB = document.forms["myForm"]["DOB"].value;     
+                      var pattern =/^([0-2][0-9]|(3)[0-1])-(((0)[0-9])|((1)[0-2]))-(194[5-9]|19[5-9]\d|200\d|201[0-9])$/;
+                      
+                      if (x == "") {
+                        alert("Name must be filled out");
+                        return false;
+                      }
+                      if(!x.match(letters))
+                         {
+                           alert("You can use only english alphabets for name and username")
+                          return false;
+                         }
+                      //PASSWORD
+                      if(password=='') {
+                            alert("Password cannot be empty")
+                            return false;
+                      }
+                      
+                      if(!password.match(/[A-Z]/g)) {
+                        alert("At least one uppercase for  valid password")
+                        return false;
+                      }
+                      if(!password.match(/[0-9]/g) ) {
+                            alert("At least one number for  valid password")
+                            return false;
+                      } 
+                    
+                    
+                    
+                      if(!password.match( /[^a-zA-Z\d]/g) ) {
+                            alert("At least one special character for valid password")
+                            return false;
+                      } 
+                      if(password.length<=8) {
+                            alert(" Password length needs to be between 8-16 characters")
+                            return false;
+                      } 
+                      if(password.length>16) {
+                            alert(" Password length needs to be between 8-16 characters")
+                            return false;
+                      } 
+                      //e mail 
+                                if (reg.test(email) == false) 
+                                {
+                                    alert('Invalid Email Address');
+                                    return (false);
+                                }
+
+                                // birth date 
+                                
+                     if (DOB =='')
+                    {
+                          alert('Date of birth can not be empty');
+                          return false;
+                           }
+                           if(DOB.match(letters)) {
+                               alert("Please use numbers only for birthday") 
+                               return false;
+                   }                                                              
+       
+                              if(pattern.test(DOB)==false)
+                        {
+                         alert("It is invalid date.Write your birth date like  02-09-1999");
+                         return false;
+                              }
+
+
+                     //telephone
+                                
+                     
+                    if(tel=="")
+                    {
+                    alert("Please Enter the Phone Number");
+                    return false;
+                    }
+                    if(isNaN(tel))
+                    {
+                    alert("Enter the valid Mobile Number(Like : 95661371171)");
+                    return false;
+                    }
+                    if(tel.length != 11)
+                    {
+                    alert(" Your Mobile Number must be 11 Integers");
+                    return false;
+                    }
+                      
+                    
+                 }
+
+
+
+
+                                                          
+                    </script>
+                
+               
+               
+               
+               
+               
+               
+                <div class="row justify-content-center">
+						<div class="footer">
+                            <p class="af">Işık Veterinary All rights Reserved </p>
+                            <a href="index.html" target="_self"> <img height="100px" class="img-fluid"  width="100px" src="2-512.png" alt="home"  > </a>
+						</div>
+					</div>	
+				</div>	
+			</div>
+		</div>				
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
